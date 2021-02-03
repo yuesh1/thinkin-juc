@@ -1,4 +1,4 @@
-package fun.yueshi.juc.atomictest;
+package fun.yueshi.juc.lock.atomictest;
 
 /**
  * ++ Thread

@@ -1,4 +1,4 @@
-package fun.yueshi.juc.spinlocks;
+package fun.yueshi.juc.lock.spinlocks;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
