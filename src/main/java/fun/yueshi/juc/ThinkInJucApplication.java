@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ThinkinJucApplication {
+public class ThinkInJucApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ThinkinJucApplication.class, args);
+        SpringApplication.run(ThinkInJucApplication.class, args);
     }
 
 }
