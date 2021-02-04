@@ -1,7 +1,7 @@
 package fun.yueshi.juc.mythread;
 
 /**
- * 线程的初步尝试
+ * First Test Thread
  *
  * @author dengzihui
  * @version 1.0
