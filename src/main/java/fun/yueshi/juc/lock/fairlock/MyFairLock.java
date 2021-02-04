@@ -18,8 +18,9 @@ public class MyFairLock {
             lock.lock();
             System.out.println(Thread.currentThread().getName() + " is holding lock");
         } finally {
-            System.out.println(Thread.currentThread().getName() + " free lock");
             lock.unlock();
+            System.out.println(Thread.currentThread().getName() + " free lock");
+
         }
     }
 
@@ -35,8 +36,8 @@ public class MyFairLock {
             threads[i] = new Thread(runnable);
         }
 
-        for (Thread thread : threads) {
-            thread.start();
+        for (int i = 0; i < 10; i++) {
+            threads[i].start();
         }
     }
 }
