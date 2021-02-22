@@ -32,6 +32,13 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>com.gitee.jd-platform-opensource</groupId>
+      <artifactId>asyncTool</artifactId>
+      <version>V1.4-SNAPSHOT</version>
+    </dependency>
+
   </dependencies>
 
   <build>
@@ -56,6 +63,12 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
+
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+
   </repositories>
   <pluginRepositories>
     <pluginRepository>
