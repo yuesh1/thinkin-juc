@@ -73,14 +73,10 @@ public class MyTest {
             }
         });
         try {
-            // 一定记得加上timeout时间，防止阻塞主线程
             latch.await(3000, TimeUnit.MILLISECONDS);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        //4.等待所有子任务完成，组装活动标签信息
-
-        //5.关闭线程池
         executorService.shutdown();
     }
 
