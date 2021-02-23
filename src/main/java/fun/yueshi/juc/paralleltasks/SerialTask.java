@@ -1,4 +1,4 @@
-package fun.yueshi.juc.forkjoin;
+package fun.yueshi.juc.paralleltasks;
 
 import java.time.Instant;
 
