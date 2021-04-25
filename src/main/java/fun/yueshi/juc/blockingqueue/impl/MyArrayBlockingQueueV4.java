@@ -43,7 +43,7 @@ public class MyArrayBlockingQueueV4<T> extends AbstractArrayBlockingQueue<T>
                 notFull.await();
             }
             enqueue(t);
-            notEmpty.signalAll();
+            notEmpty.signal();
         } finally {
             reentrantLock.unlock();
         }
@@ -57,7 +57,7 @@ public class MyArrayBlockingQueueV4<T> extends AbstractArrayBlockingQueue<T>
                 notEmpty.await();
             }
             T headElement = dequeue();
-            notFull.await();
+            notFull.signal();
             return headElement;
         } finally {
             reentrantLock.unlock();
